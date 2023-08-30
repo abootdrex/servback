@@ -43,8 +43,8 @@ app.post('/registrations', async(req, res) => {
   
 app.get('/blogdata', async (req, res) => {
     try {
-      const blogdata = await BlogData.find();
-      res.json(blogdata);
+      const blogdatas = await BlogData.find();
+      res.json(blogdatas);
     } catch (error) {
       console.error(error);
       res.status(500).json({ message: 'Server error' });
