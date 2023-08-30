@@ -17,11 +17,18 @@ const ReactFormDataSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-
+    about:{
+        type:String,
+        required:true,
+    },    
     blog: {
         type: String,
         required: true
     },
+    reflinks:{
+        type:String,
+        required:true,
+    },    
 
 });
 
